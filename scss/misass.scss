@@ -57,10 +57,11 @@ a{
     & img{
         object-fit: cover;
         border-radius: 30px;
+        margin-left: 50px;
     }
     @media (max-width:1200px) {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 

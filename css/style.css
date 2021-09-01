@@ -47,11 +47,12 @@ a {
         transform-origin: left; }
   .section__principal img {
     object-fit: cover;
-    border-radius: 30px; }
+    border-radius: 30px;
+    margin-left: 50px; }
   @media (max-width: 1200px) {
     .section__principal {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column-reverse; } }
 
 .button {
   position: relative;
