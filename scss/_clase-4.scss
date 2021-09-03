@@ -17,17 +17,17 @@
         z-index: 5;
         position: relative;
     }
-    &__calculadora input,
+    &__calculadora .c4__input,
     &__calculadora button{
+        background: #000;
+        color: #fff;
         margin: .6rem auto;
         padding: .5em;
         width: 250px;
-        background: #000;
-        color: #fff;
         border-radius: 5px;
         transition: 250ms ease-in-out;
     }
-    &__calculadora input:focus{
+    &__calculadora .c4__input:focus{
         background: rgba(61, 61, 61, 0.411);
     }
     &__calculadora button{
@@ -61,4 +61,18 @@
                 color: rgba(61, 61, 61, 0.411);
             }
     }
+    &__result{
+        margin: .6rem auto;
+        padding: .5em;
+        width: 250px;
+        border-radius: 5px;
+        background: #219ebc;
+        outline: none;
+        border: none;
+    }
+    &__input::placeholder,
+    &__result::placeholder{
+            color: #fff;
+    }
 }
+
