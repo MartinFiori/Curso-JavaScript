@@ -99,3 +99,62 @@ a {
     color: #fff; }
   .boton__principal:hover {
     background-color: #e63946; }
+
+.c4__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; }
+
+.c4__calculadora {
+  padding: 20px 10px;
+  max-width: 525px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  z-index: 5;
+  position: relative; }
+
+.c4__calculadora input,
+.c4__calculadora button {
+  margin: .6rem auto;
+  padding: .5em;
+  width: 250px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  transition: 250ms ease-in-out; }
+
+.c4__calculadora input:focus {
+  background: rgba(61, 61, 61, 0.411); }
+
+.c4__calculadora button {
+  cursor: pointer; }
+  .c4__calculadora button:hover {
+    background-color: rgba(61, 61, 61, 0.411); }
+
+.c4__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.c4__title {
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+  letter-spacing: .2em; }
+
+.c4__refresh {
+  color: #000;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 60%;
+  right: 10px;
+  transition: color 250ms ease-in-out; }
+  .c4__refresh:hover {
+    color: rgba(61, 61, 61, 0.411); }

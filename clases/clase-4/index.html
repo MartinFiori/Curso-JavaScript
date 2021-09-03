@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4</title>
+    <!-- ========== Script FontAwesome ========== -->
+    <script src="https://kit.fontawesome.com/6050990e90.js" crossorigin="anonymous"></script>
+    <!-- ========== Css ========== -->
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <a href="../../index.html"><button class="boton__principal">Menú Principal</button></a>
+    <div class="c4__container">
+        <div class="c4__calculadora">
+            <i class="fas fa-redo-alt c4__refresh" id="c4__refresh"></i>
+            <h1 class="c4__title">CALCULADORA</h1>
+            <input type="text" class="c4__input" id="c4__txtIdNumber1" placeholder="Ingrese el primer número">
+            <input type="text" class="c4__input" id="c4__txtIdNumber2" placeholder="Ingrese el segundo número">
+            <input type="text" class="c4__input" id="c4__txtIdResult" readonly>
+            <div class="c4__btns">
+                <button id="btnSuma">Suma</button>
+                <button id="btnResta">Resta</button>
+                <button id="btnMultiplicar">Multiplicar</button>
+                <button id="btnDividir">Dividir</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
