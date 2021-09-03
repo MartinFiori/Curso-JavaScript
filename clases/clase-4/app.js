@@ -1,12 +1,12 @@
-
+let num1, num2, resultado;
 
 // // SUMA
 const suma = document.querySelector('#btnSuma')
 
 suma.addEventListener('click', function suma(){
-    let num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
-    let num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
-    let resultado = num1+num2
+    num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
+    num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
+    resultado = num1+num2
     document.getElementById('c4__txtIdResult').value = resultado
 })
 
@@ -17,10 +17,10 @@ suma.addEventListener('click', function suma(){
 const resta = document.querySelector('#btnResta')
 
 resta.addEventListener('click', function resta(){
-    let num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
-    let num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
-    let resultado = num1-num2
-    document.getElementById('c4__txtIdResult').value = resultado
+        num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
+        num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
+        resultado = num1-num2
+        document.getElementById('c4__txtIdResult').value = resultado
 })
 
 
@@ -29,10 +29,11 @@ resta.addEventListener('click', function resta(){
 const multiplicacion = document.querySelector('#btnMultiplicar')
 
 multiplicacion.addEventListener('click', function multiplicacion(){
-    let num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
-    let num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
-    let resultado = num1*num2
+    num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
+    num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
+    resultado = num1*num2
     document.getElementById('c4__txtIdResult').value = resultado
+    return `El resultado es `
 })
 
 
@@ -41,9 +42,9 @@ multiplicacion.addEventListener('click', function multiplicacion(){
 const division = document.querySelector('#btnDividir')
 
 division.addEventListener('click', function division(){
-    let num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
-    let num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
-    let resultado = num1/num2
+    num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
+    num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
+    resultado = num1/num2
     document.getElementById('c4__txtIdResult').value = resultado
 })
 
