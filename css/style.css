@@ -234,6 +234,7 @@ a {
   z-index: 2;
   text-align: center;
   padding: 20px;
+  border-radius: 10px;
   box-sizing: border-box; }
 
 .close-btn {
