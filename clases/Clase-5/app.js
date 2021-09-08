@@ -1,10 +1,4 @@
 "use strict"
-
-
-
-
-
-
 // PopUp
 function togglePopup()
 {
@@ -23,12 +17,13 @@ class Employee {
     }
 }
 
+// Agregando a los empleados
 const persona1 = new Employee ("Elsa", "Pato", 39, "Female");
 const persona2 = new Employee ("Jazmin", "Flores", 29, "Female");
 const persona3 = new Employee ("Poca", "Hontas", 34, "No binario");
 
 
-
+// Haciendo que el input muestre la infomación de la persona que quiera
 const firstUser = document.querySelector('.firstUser');
 
 firstUser.addEventListener('click', function(){
