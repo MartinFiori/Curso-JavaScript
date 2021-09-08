@@ -65,7 +65,7 @@ a{
 }
 
 .button{
-    position: relative;
+    position: absolute;
     left: 48%;
     right: 50%;
     border: solid 2px #000;
@@ -75,6 +75,7 @@ a{
     cursor: pointer;
     padding-right: 1rem;
     transition: transform 200ms ease-out;
+    z-index: 1000;
         &:hover{
             color: #fff;
             border: solid 2px #fff;

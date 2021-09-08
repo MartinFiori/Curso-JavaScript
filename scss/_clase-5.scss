@@ -1,0 +1,139 @@
+.c5
+{
+    &__body
+    {
+        background-image: url(../assets/stock.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title
+    {
+        font-size: clamp(2rem, 8vw, 3rem);
+        color: #fff;
+    }
+    &__container
+    {
+        padding: 50px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 3px solid #fff;
+        border-radius: 50px;
+        position: relative;
+    }
+    &__numbers
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+            & div
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+                border-radius: 100px;
+                background: rgb(255, 255, 255);
+                border: 1px solid #fff;
+                height: 20px;
+                width: 20px;
+                cursor: pointer;
+                    &:hover
+                    {
+                        background:rgb(192, 192, 192);
+                    }
+            }
+            & p
+            {
+                font-size: 22px;
+                color: #000;
+            }
+            
+    }
+}
+.overlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.close-btn
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+
+button
+{
+    cursor: pointer;
+}
+
+.popup.active .overlay
+{
+    display: block;
+}
+
+.popup.active .content
+{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+::placeholder
+{
+    color: #fff;
+}
+
+
+.c5__inputs
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+        & input
+        {
+            border: none;
+            border-bottom: 2px solid #000;
+            outline: none;
+        }
+}
+
+
+
+

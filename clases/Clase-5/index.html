@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5</title>
+    <!-- ========== Script FontAwesome ========== -->
+    <script src="https://kit.fontawesome.com/6050990e90.js" crossorigin="anonymous"></script>
+    <!-- ========== Css ========== -->
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="c5__body">
+    <a href="../../index.html"><button class="boton__principal">Menú Principal</button></a>
+    
+    <div class="c5__container">
+        <h1 class="c5__title">Registro de empleados</h1>
+        <div class="c5__numbers">
+            <div id="c5__user" class="firstUser" onclick="togglePopup()"><p>1</p></div>
+            <div id="c5__user" class="secondUser" onclick="togglePopup()"><p>2</p></div>
+            <div id="c5__user" class="thirdUser" onclick="togglePopup()"><p>3</p></div>
+        </div>
+
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <div class="c5__inputs">
+                        <input type="text" id="txtName" readonly>
+                        <input type="text" id="txtLastName" readonly>
+                        <input type="text" id="txtAge" readonly>
+                        <input type="text" id="txtGender" readonly>
+                    </div>
+            </div>
+        </div>
+
+
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>
