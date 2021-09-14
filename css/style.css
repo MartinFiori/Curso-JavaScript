@@ -261,9 +261,6 @@ button {
   transition: all 300ms ease-in-out;
   transform: translate(-50%, -50%) scale(1); }
 
-::placeholder {
-  color: #fff; }
-
 .c5__inputs {
   display: flex;
   flex-direction: column;
@@ -274,3 +271,5 @@ button {
     border: none;
     border-bottom: 2px solid #000;
     outline: none; }
+    .c5__inputs input::placeholder {
+      color: #fff; }

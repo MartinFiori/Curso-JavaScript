@@ -1,5 +1,5 @@
 "use strict"
-// PopUp
+PopUp
 function togglePopup()
 {
     document.getElementById("popup-1").classList.toggle("active")
@@ -52,6 +52,7 @@ thirdUser.addEventListener('click', function(){
     document.getElementById('txtAge').value = persona3.age;
     document.getElementById('txtGender').value = persona3.gender;
 })
+
 
 
 

@@ -7,7 +7,7 @@ suma.addEventListener('click', function suma(){
     num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
     num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
     resultado = num1+num2
-    document.getElementById('c4__txtIdResult').value = resultado
+    document.getElementById('c4__txtIdResult').value = `El resultado es ${resultado}`
 })
 
 
@@ -20,7 +20,7 @@ resta.addEventListener('click', function resta(){
         num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
         num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
         resultado = num1-num2
-        document.getElementById('c4__txtIdResult').value = resultado
+        document.getElementById('c4__txtIdResult').value = `El resultado es ${resultado}`
 })
 
 
@@ -44,7 +44,7 @@ division.addEventListener('click', function division(){
     num1 = parseInt(document.getElementById("c4__txtIdNumber1").value)
     num2 = parseInt(document.getElementById("c4__txtIdNumber2").value)
     resultado = num1/num2
-    document.getElementById('c4__txtIdResult').value = resultado
+    document.getElementById('c4__txtIdResult').value = `El resultado es ${resultado}`
 })
 
 

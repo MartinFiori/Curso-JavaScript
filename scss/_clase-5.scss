@@ -114,10 +114,7 @@ button
     transform: translate(-50%,-50%) scale(1);
 }
 
-::placeholder
-{
-    color: #fff;
-}
+
 
 
 .c5__inputs
@@ -132,6 +129,10 @@ button
             border: none;
             border-bottom: 2px solid #000;
             outline: none;
+                &::placeholder
+                {
+                    color: #fff;
+                }
         }
 }
 
