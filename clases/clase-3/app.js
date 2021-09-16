@@ -38,7 +38,7 @@
                     break
                 
                 default: 
-                    alert("Espero haberlo ayudado")
+                    alert("Ingrese una opción válida por favor")
             }
         }
 })

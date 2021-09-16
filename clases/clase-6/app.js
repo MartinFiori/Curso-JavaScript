@@ -31,7 +31,4 @@ const nombresEmpleados = () => {
 nombresEmpleados()
 
 
-console.log(empleados.sort((a,b)=>b.edad-a.edad))
-
-
-
+console.log(empleados.sort((a, b) => b.edad - a.edad))
