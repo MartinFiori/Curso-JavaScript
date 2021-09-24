@@ -1,15 +1,14 @@
 "use strict"
-// Declaración de variables del HTML
+
+// Declaración variables
 const nombre = document.querySelector('.c8__nombre');
 const edad = document.querySelector('.c8__edad');
 const submit = document.querySelector('.c8__submit');
-const select = document.querySelector('.c8__select');
-const readonly = document.querySelector('.c8__readonly');
-
-
+let optionEmpleado = document.getElementById('c8__select');
 
 const empleados = []
 
+// Molde
 class Empleado {
     constructor(nombreValue, edadValue) {
         this.nombre = nombreValue;
@@ -19,28 +18,18 @@ class Empleado {
 
 // Push y validación del array Empleado
 submit.addEventListener('click', function (e) {
-    let nombreValue = document.querySelector('.c8__nombre').value;
-    const edadValue = document.querySelector('.c8__edad').value;
+    let nombreValue = nombre.value;
+    const edadValue = edad.value;
+    
     e.preventDefault();
-    if (!isNaN(edadValue)) {
-        empleados.push(new Empleado(nombreValue, edadValue))
+    if (!isNaN(edadValue) && nombreValue) {
+        let empleado = new Empleado(nombreValue, edadValue)
+        empleados.push(empleado)
+        optionEmpleado.innerHTML += "<option>" + empleado.nombre + "</option>"
     } else {
-        alert(`Por favor, ingrese una edad válida.`)
+        alert(`Por favor, ingrese una edad y un nombre válidos.`)
     }
-    console.log(empleados)
 });
 
-// Metiendo HTML desde js
-const fragment = document.createDocumentFragment();
-
-
-for (const empleado of empleados) {
-    const selectItem = document.createElement('OPTION')
-    selectItem.setAttribute('value', empleado)
-    selectItem.textContent = empleado
-    fragment.appendChild(selectItem)
-}
-
-select.appendChild(fragment)
 
 

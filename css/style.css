@@ -281,7 +281,10 @@ button {
   transform: translate(-50%, -50%); }
 
 .c8__title {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.8rem;
+  text-decoration: underline; }
 
 .c8__formulario {
   background-color: #919191;
@@ -307,4 +310,8 @@ button {
   background: rgba(119, 118, 118, 0.815);
   color: #fff;
   font-weight: bold;
-  border: 3px solid #fff; }
+  border: 3px solid #fff;
+  transition: transform 100ms ease; }
+  .c8__submit:active {
+    background-color: rgba(56, 56, 56, 0.815);
+    transform: scale(1.03); }

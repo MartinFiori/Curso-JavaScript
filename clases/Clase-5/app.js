@@ -24,7 +24,7 @@ const persona3 = new Employee ("Poca", "Hontas", 34, "No binario");
 
 
 // Haciendo que el input muestre la infomación de la persona que quiera
-const firstUser = document.querySelector('.firstUser');
+const firstUser = document.getElementsByClassName('firstUser');
 
 firstUser.addEventListener('click', function(){
     document.getElementById('txtName').value = persona1.name;
