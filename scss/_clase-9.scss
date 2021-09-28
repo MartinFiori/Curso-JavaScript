@@ -1,0 +1,74 @@
+.c9{
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        min-height: 600px;
+        margin-top: 50px;
+    }
+    &__buscador{
+        width: auto;
+        height: 50px;
+        background: #fff;
+        margin-block: 50px;
+        cursor: pointer;
+        border-radius: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+            & .c9__input{
+                width: 325px;
+                outline: none;
+                border: none;
+                border-bottom: 3px solid #000;
+                font-size: 1.4rem;
+                margin-inline: 1em;
+            }
+    }
+    &__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    &__card{
+        background: #fafafa;
+        height: 250px;
+        width: 250px;
+        margin: 15px;
+        cursor: pointer;
+        border: 2px solid #000;
+        border-radius: 15px;
+        transition: all 250ms ease-out;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0 0 4px 4px rgb(99, 99, 99);
+            }
+        & h1{
+            font-size: 2rem;
+            text-align: center;
+        }
+        & p{
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        & img{
+            width: auto;
+            height: 100px;
+            padding: 5px;
+            margin: 0 auto;
+            border-radius: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    &__lupa{
+        color: #000;
+        font-size: 1.7rem;
+        margin: 0.3em;
+        
+    }
+}

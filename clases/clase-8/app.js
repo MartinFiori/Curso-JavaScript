@@ -5,6 +5,7 @@ const nombre = document.querySelector('.c8__nombre');
 const edad = document.querySelector('.c8__edad');
 const submit = document.querySelector('.c8__submit');
 let optionEmpleado = document.getElementById('c8__select');
+let readonly = document.querySelector('.c8__readonly');
 
 const empleados = []
 
@@ -20,7 +21,7 @@ class Empleado {
 submit.addEventListener('click', function (e) {
     let nombreValue = nombre.value;
     const edadValue = edad.value;
-    
+
     e.preventDefault();
     if (!isNaN(edadValue) && nombreValue) {
         let empleado = new Empleado(nombreValue, edadValue)
